@@ -103,3 +103,112 @@ table {
 .grid-12 {
   width: calc(100% - 20px);
 }
+
+[class^="grid-"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 760px - 1) {
+  [class^="grid-"] {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.offset-1 {
+  margin-left: calc(8.33333% + 10px);
+}
+
+.offset-2 {
+  margin-left: calc(16.66667% + 10px);
+}
+
+.offset-3 {
+  margin-left: calc(25% + 10px);
+}
+
+.offset-4 {
+  margin-left: calc(33.33333% + 10px);
+}
+
+.offset-5 {
+  margin-left: calc(41.66667% + 10px);
+}
+
+.offset-6 {
+  margin-left: calc(50% + 10px);
+}
+
+.offset-7 {
+  margin-left: calc(58.33333% + 10px);
+}
+
+.offset-8 {
+  margin-left: calc(66.66667% + 10px);
+}
+
+.offset-9 {
+  margin-left: calc(75% + 10px);
+}
+
+.offset-10 {
+  margin-left: calc(83.33333% + 10px);
+}
+
+.offset-11 {
+  margin-left: calc(91.66667% + 10px);
+}
+
+.offset-12 {
+  margin-left: calc(100% + 10px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1200px - 1) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media screen and (max-width: 760px - 1) {
+  .container {
+    max-width: 480px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.container::before, .container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 760px - 1) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.row::before, .row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
